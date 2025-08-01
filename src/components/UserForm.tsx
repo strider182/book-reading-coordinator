@@ -5,9 +5,10 @@ import { User, Portion } from '../types';
 
 interface UserFormProps {
     onSubmit: (data: User) => void;
+    assignedPortions?: number[];
 }
 
-const UserForm: React.FC<UserFormProps> = ({ onSubmit }) => {
+const UserForm: React.FC<UserFormProps> = ({ onSubmit, assignedPortions = [] }) => {
     const [name, setName] = useState('');
     const [selectedPortions, setSelectedPortions] = useState<number[]>([]);
     const [completionDate, setCompletionDate] = useState<Date | null>(null);
@@ -48,6 +49,7 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit }) => {
                 <PortionSelector
                     selectedPortions={selectedPortions}
                     onPortionChange={setSelectedPortions}
+                    assignedPortions={assignedPortions}
                 />
             </div>
             <div style={{ marginBottom: '16px' }}>

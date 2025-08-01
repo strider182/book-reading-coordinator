@@ -34,10 +34,11 @@ const App: React.FC = () => {
             });
     };
 
+    const assignedPortions = userData.map(u => u.selectedPortion.id);
     return (
         <Layout>
             <h1>Book Reading Coordinator</h1>
-            <UserForm onSubmit={handleUserData} />
+            <UserForm onSubmit={handleUserData} assignedPortions={assignedPortions} />
             {loading ? <div>Loading...</div> : <CoverageDiagram data={userData} />}
         </Layout>
     );

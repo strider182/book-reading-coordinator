@@ -29,6 +29,11 @@ app.get('/api/users', (req, res) => {
 app.post('/api/users', (req, res) => {
     const user = req.body;
     const data = readUserData();
+    // Block duplicate portion assignment
+    const alreadyAssigned = data.some(u => u.selectedPortion && u.selectedPortion.id === user.selectedPortion.id);
+    if (alreadyAssigned) {
+        return res.status(400).json({ success: false, message: 'Portion already assigned.' });
+    }
     data.push(user);
     writeUserData(data);
     res.json({ success: true });
