@@ -1,0 +1,50 @@
+[
+  {
+    "name": "test",
+    "selectedPortion": {
+      "id": 2,
+      "title": "Portion 2"
+    },
+    "completionDate": "2025-08-14T00:00:00.000Z"
+  },
+  {
+    "name": "test",
+    "selectedPortion": {
+      "id": 13,
+      "title": "Portion 13"
+    },
+    "completionDate": "2025-08-14T00:00:00.000Z"
+  },
+  {
+    "name": "test",
+    "selectedPortion": {
+      "id": 23,
+      "title": "Portion 23"
+    },
+    "completionDate": "2025-08-14T00:00:00.000Z"
+  },
+  {
+    "name": "another",
+    "selectedPortion": {
+      "id": 8,
+      "title": "Portion 8"
+    },
+    "completionDate": "2025-08-29T00:00:00.000Z"
+  },
+  {
+    "name": "another",
+    "selectedPortion": {
+      "id": 17,
+      "title": "Portion 17"
+    },
+    "completionDate": "2025-08-29T00:00:00.000Z"
+  },
+  {
+    "name": "another",
+    "selectedPortion": {
+      "id": 26,
+      "title": "Portion 26"
+    },
+    "completionDate": "2025-08-29T00:00:00.000Z"
+  }
+]

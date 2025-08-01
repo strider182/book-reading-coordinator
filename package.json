@@ -1,0 +1,48 @@
+{
+  "name": "book-reading-coordinator",
+  "version": "1.0.0",
+  "description": "A web application to coordinate reading portions of a book, allowing users to enter their names, select reading portions, and set completion dates.",
+  "main": "src/App.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "chart.js": "^3.6.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "typescript": "^4.4.3"
+  },
+  "keywords": [
+    "reading",
+    "book",
+    "coordination",
+    "web",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
