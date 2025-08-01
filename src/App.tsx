@@ -4,7 +4,7 @@ import CoverageDiagram from './components/CoverageDiagram';
 import Layout from './components/Layout';
 import { User } from './types';
 
-const API_URL = 'http://localhost:4000/api/users';
+const API_URL = '/api/users';
 
 const App: React.FC = () => {
     const [userData, setUserData] = useState<User[]>([]);

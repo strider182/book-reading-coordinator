@@ -11,6 +11,16 @@ const DATA_FILE = path.join(__dirname, 'userData.json');
 app.use(cors());
 app.use(bodyParser.json());
 
+// Serve React build files
+const buildPath = path.join(__dirname, 'build');
+if (fs.existsSync(buildPath)) {
+    app.use(express.static(buildPath));
+    app.get('*', (req, res) => {
+        if (req.path.startsWith('/api/')) return;
+        res.sendFile(path.join(buildPath, 'index.html'));
+    });
+}
+
 // Helper to read/write user data
 function readUserData() {
     if (!fs.existsSync(DATA_FILE)) return [];
